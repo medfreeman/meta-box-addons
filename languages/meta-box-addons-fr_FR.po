@@ -1,0 +1,59 @@
+# Copyright (C) 2014 TODO
+# This file is distributed under the same license as the Meta_Box_addons package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Meta Box addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-08 20:46+0100\n"
+"PO-Revision-Date: 2014-04-08 20:49+0100\n"
+"Last-Translator: Mehdi Lahlou <mehdi.lahlou@free.fr>\n"
+"Language-Team: Mehdi Lahlou <mehdi.lahlou@free.fr>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-meta-box-addons-admin.php:118
+msgid "You need to install and enable meta-box for this plugin to function."
+msgstr ""
+"Vous devez installer et activer l'extension meta-box pour que cette "
+"extension fonctionne."
+
+#: admin/class-meta-box-addons-admin.php:127
+msgid ""
+"You need to install at least meta-box version 4.3.6 for this plugin to "
+"function."
+msgstr ""
+"Vous devez installer l'extension meta-box dans sa version 4.3.6 au minimum "
+"pour que cette extension fonctionne."
+
+#: admin/class-meta-box-addons-admin.php:127
+msgid "You have only version"
+msgstr "Vous avez seulement la version"
+
+#: admin/class-meta-box-addons-admin.php:127
+msgid "installed."
+msgstr "installée."
+
+#: admin/includes/fields/embed.php:48
+msgid "Error: Link Not Embeddible."
+msgstr "Erreur : Lien non intégrable."
+
+#: admin/includes/fields/embed.php:75
+msgid "Show embed"
+msgstr "Voir le lien intégré"
+
+#: admin/includes/fields/embed.php:76
+msgid "Hide embed"
+msgstr "Cacher le lien intégré"
+
+#: admin/includes/fields/st_link.php:41
+msgid "Open Link"
+msgstr "Ouvrir le lien"
