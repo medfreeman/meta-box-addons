@@ -1,4 +1,4 @@
-# Meta Box plugin addons
+# Meta Box addons
 
 Add new field types and helpers to meta-box wordpress plugin (http://wordpress.org/plugins/meta-box/ - https://github.com/rilwis/meta-box).
 

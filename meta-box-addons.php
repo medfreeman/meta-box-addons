@@ -12,7 +12,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Meta Box addons
- * Plugin URI:        http://wordpress.org/plugins
+ * Plugin URI:        https://github.com/medfreeman/meta-box-addons
  * Description:       Meta Box plugins adons (new field types, helpers) - Requires meta-box plugin
  * Version:           1.0.1
  * Author:            Mehdi Lahlou
