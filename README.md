@@ -4,7 +4,7 @@ Add new field types and helpers to meta-box wordpress plugin (http://wordpress.o
 
 ## Description
 
-Adds an embed field that works with oembed, and link field with protocol verification and a open link button to test the validity of the link upon entering.
+Adds an embed field that works with oembed, has a button to test and see if the link posted is embeddible, and a link field with protocol verification and a open link button to test the validity of the link upon entering.
 Corresponding helpers for formatting are present, and new formatters for text fields also.
 
 ## Requirements
@@ -40,13 +40,37 @@ Then go to your Plugins screen and click __Activate__.
 
 ## Usage
 
-Nothing to do.
+Declare your meta boxes as usual, you now have two new fields types at your disposal, 'embed' and 'st_link'.
 
-A class name is automatically appended to the body HTML element, that is 'currentlang-XX' where XX is the language code.
-
-Ajax requests are automatically appended the 'lang' argument with the current language, so as to load the environment in the current user frontend language.
-
-If Events Manager plugin is enabled, events and locations titles, contents and excerpts are automatically translated according to your input and the current language.
+```PHP
+function my_register_meta_boxes( $meta_boxes ) {
+	$prefix = 'my-prefix';
+	
+	$meta_boxes[] = array(
+        'id' => $prefix . 'page_info_box',
+        'title' => __( 'Page information', 'my-textdomain' ),
+        'pages' => array( 'pge' ),
+        'context' => 'normal',
+            'fields' => array( //Add a repeatable link field
+			    array(
+                    'name'	=> __( 'Link', 'my-textdomain' ),
+                    'id'	=> $prefix . 'link',
+                    'type'	=> 'st_link',
+                    'clone'	=> true,
+                    'size'	=> 40
+                ),
+				array( //Add a repeatable embed field
+					'name' 	=> __( 'Videos', 'my-textdomain' ),
+					'id' 	=> $prefix . 'video_links',
+					'type' 	=> 'embed',
+					'desc' 	=> __( 'Enter the link of the video', 'my-textdomain' ),
+					'clone'	=> true,
+				),
+             )
+     );
+}
+add_filter( 'rwmb_meta_boxes', 'my_register_meta_boxes' );
+```
 
 ## Update
 
