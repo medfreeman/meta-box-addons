@@ -87,7 +87,7 @@ To retrieve formatted values, use rwmb_meta function as such :
 ```PHP
 //LINK FIELD
 
-//raw link
+//raw link url
 $meta = rwmb_meta( 'my-prefix-links', array(), $post_id );
 //formatted link / list
 $meta = rwmb_meta( 'my-prefix-links', array( 'type' => 'st_link', 'target' => '_blank', 'format' => 'list', 'separator' => ' | ' ), $post_id );
@@ -100,7 +100,7 @@ $video_embeds = rwmb_meta( 'my-prefix-videos', array(), $post_id );
 $video_embeds = rwmb_meta( 'my-prefix-videos', array( 'type' => 'embed', 'width' => '940', 'height' => '250' ) );
 
 //TEXT FIELDS FORMATTING (translation + paragraphs and line breaks)
-$meta = rwmb_meta( 'my-prefix-text', array( 'type' => 'text', 'qtranslate' => true, 'nl2p' => $nl2p ), $post_id );
+$meta = rwmb_meta( 'my-prefix-text', array( 'type' => 'text', 'qtranslate' => true, 'nl2p' => true ), $post_id );
 
 ```
 
